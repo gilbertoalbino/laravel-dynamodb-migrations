@@ -55,7 +55,26 @@ Commands
 
 ## Make Model
 
+Makes a new Model with the given MODEL_NAME inside `App\Models` folder, and suggests a `DummyTable` table.
+
+```
+php artisan dynamodb:make_model MODEL_NAME
+```
+
+In case you want to specify a different table other than `DummyTable`, you can use `--table=TABLE_NAME`. 
+
 ```
 php artisan dynamodb:make_model MODEL_NAME --table=TABLE_NAME
 ```
 
+## Migrate
+
+```
+php artisan dynamodb:migrate --force
+```
+
+You can use `--force` when running in production. Be careful!
+
+```
+php artisan dynamodb:migrate --force
+```
