@@ -50,3 +50,12 @@ composer require quankim/laravel-dynamodb-migrations
         ]
     ];
 ```
+
+Commands
+
+## Make Model
+
+```
+php artisan dynamodb:make_model MODEL_NAME --table=TABLE_NAME
+```
+
